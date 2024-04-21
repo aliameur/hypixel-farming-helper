@@ -8,6 +8,10 @@ the [SkyHanni](https://github.com/hannibal002/SkyHanni) mod.
 
 Tested on MacOS Sonoma. Compiling process only supports MacOS for now.
 
+<h3 align="center">
+For educational purposes only
+</h3>
+
 ## Prerequisites
 
 - [Python 3.x](https://www.python.org/downloads/)
