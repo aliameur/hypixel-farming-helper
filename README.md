@@ -1,4 +1,6 @@
-# Superfarm 4.0 Hypixel Farming Helper
+<h1 align = "center">
+	Superfarm 4.0 Hypixel Farming Helper
+</h1>
 
 `hypixel-farming-helper` is small helper for using the [Superfarm 4.0](https://www.youtube.com/watch?v=9g3YTqrVgC4). It
 intercepts global key pressed and provides a helpful "sticky key" experience. Works best with
