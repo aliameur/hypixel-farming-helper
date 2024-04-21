@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hypixel-macro.iml" filepath="$PROJECT_DIR$/.idea/hypixel-macro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hypixel-farming-helper.iml" filepath="$PROJECT_DIR$/.idea/hypixel-farming-helper.iml" />
     </modules>
   </component>
 </project>

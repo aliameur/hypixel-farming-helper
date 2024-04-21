@@ -1,11 +1,11 @@
 from threading import Lock
-from PySide6 import QtWidgets
 from pynput.keyboard import Controller, Listener, Key
+from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QPushButton, QGroupBox, QRadioButton, QApplication
 
 from config import Config
 
 
-class Main(QtWidgets.QMainWindow):
+class Main(QMainWindow):
     def __init__(self):
         super().__init__()
         self.modes = Config.get_modes()
@@ -24,16 +24,16 @@ class Main(QtWidgets.QMainWindow):
         self.setWindowTitle("Hypixel Farming Macro")
         self.resize(280, 150)
 
-        self.main_widget = QtWidgets.QWidget(self)
+        self.main_widget = QWidget(self)
         self.setCentralWidget(self.main_widget)
-        self.layout = QtWidgets.QVBoxLayout()
+        self.layout = QVBoxLayout()
 
-        self.mode_group = QtWidgets.QGroupBox("Select Mode:")
-        self.mode_layout = QtWidgets.QVBoxLayout()
+        self.mode_group = QGroupBox("Select Mode:")
+        self.mode_layout = QVBoxLayout()
         self.mode_radios = {}
 
         for i, label in enumerate(self.modes):
-            mode_radio = QtWidgets.QRadioButton(label)
+            mode_radio = QRadioButton(label)
             self.mode_layout.addWidget(mode_radio)
             self.mode_radios[label] = mode_radio
 
@@ -43,7 +43,7 @@ class Main(QtWidgets.QMainWindow):
         self.mode_group.setLayout(self.mode_layout)
         self.layout.addWidget(self.mode_group)
 
-        self.toggle_button = QtWidgets.QPushButton('Start', self)
+        self.toggle_button = QPushButton('Start', self)
         self.layout.addWidget(self.toggle_button)
         self.main_widget.setLayout(self.layout)
 
@@ -120,7 +120,7 @@ class Main(QtWidgets.QMainWindow):
 
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication([])
+    app = QApplication([])
     main = Main()
     main.setup_keypress_listener()
     app.exec()
