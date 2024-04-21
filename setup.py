@@ -10,13 +10,14 @@ from setuptools import setup
 APP = ['app.py']
 DATA_FILES = []
 OPTIONS = {
-    "iconfile": "icon.ico",
-    "packages": ["pynput"]
+    "packages": ["pynput"],
+    "iconfile": "icon.icns",
+    "optimize": 2,
 }
 
 setup(
     app=APP,
-    name="Superfarm 4.0 Hypixel Farming Helper",
+    name="Hypixel Farming Helper",
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
