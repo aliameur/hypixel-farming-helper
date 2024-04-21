@@ -16,7 +16,7 @@ OPTIONS = {
 
 setup(
     app=APP,
-    name="Hypixel Farming Macro",
+    name="Superfarm 4.0 Hypixel Farming Helper",
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
