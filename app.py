@@ -1,6 +1,7 @@
+import sys
 from threading import Lock
 from pynput.keyboard import Controller, Listener, Key
-from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QPushButton, QGroupBox, QRadioButton, QApplication
+from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QPushButton, QGroupBox, QRadioButton, QApplication
 
 from config import Config
 
@@ -119,10 +120,11 @@ class Main(QMainWindow):
         return config
 
 
-if __name__ == "__main__":
-    app = QApplication([])
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+
     main = Main()
     main.setup_keypress_listener()
-    app.exec()
+    sys.exit(app.exec_())
 
 # https://github.com/moses-palmer/pynput/issues/511
