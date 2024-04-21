@@ -3,7 +3,7 @@
 </h1>
 
 `hypixel-farming-helper` is small helper for using the [Superfarm 4.0](https://www.youtube.com/watch?v=9g3YTqrVgC4). It
-intercepts global key pressed and provides a helpful "sticky key" experience. Works best with
+intercepts global key presses and provides a helpful "sticky key" experience. Works best with
 the [SkyHanni](https://github.com/hannibal002/SkyHanni) mod.
 
 Tested on MacOS Sonoma. Compiling process only supports MacOS for now.
